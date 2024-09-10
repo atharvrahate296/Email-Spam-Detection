@@ -1,0 +1,53 @@
+
+body {
+    background-image: url('/static/images/background.jpg'); /* Sample image URL */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    bottom: 250px; /* Moves the container 50px down from the center */
+}
+a input[type="submit"] {
+    background-color: #19f483; 
+    border: black solid;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a input[type="submit"]:hover {
+    background-color: #058423; 
+}
+h1 {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    margin: 0;
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(-30px); }
+    to { transform: translateY(0); }
+}
